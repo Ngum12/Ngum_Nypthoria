@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ngum Dieudonne - Personal Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #3A86FF;
+            --secondary-color: #FF006E;
+            --background-color: #F8F9FA;
+            --text-color: #333333;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--background-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        header {
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin-left: 2rem;
+        }
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: var(--primary-color);
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 4rem 0;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+        }
+        .cta-button {
+            display: inline-block;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #D80059;
+        }
+        .profile-picture {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid white;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        .section {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+        .section h2 {
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .card {
+            background-color: #F1F3F5;
+            border-radius: 8px;
+            padding: 1.5rem;
+            transition: transform 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            color: var(--secondary-color);
+            margin-bottom: 1rem;
+        }
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav style="padding: 1cm;">
+            <div class="logo">Ngum Dieudonne</div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#cv">CV</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container"> 
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <h1>Ngum Dieudonne</h1>
+                <p>Software Engineer | Educator | Innovator</p>
+                <a href="#contact" class="cta-button">Get in Touch</a>
+            </div>
+            <img src="/mnt/data/IMG_20230418_145857_633.jpg" alt="Ngum Dieudonne" class="profile-picture">
+        </section>
+    </div>
+    
+
+        <section class="section" id="about">
+            <h2>About Me</h2>
+            <p>I bring a unique and diverse background to the table, with a multifaceted approach to life and career. My journey began with 8 years of dedicated experience as a science teacher, specializing in subjects such as chemistry, physics, mathematics, and biology. This tenure equipped me with invaluable skills in education, communication, and problem-solving. Building on my teaching experience, I embarked on a new path, pursuing a 3-year study program in petroleum engineering. During this time, I delved deep into the realms of renewable and non-renewable energy, gaining comprehensive knowledge and insights into the energy landscape. Recognizing the pivotal role of technology in shaping our generation, I was inspired to pivot towards software engineering. Enrolling in the esteemed African Leadership University, I am currently immersed in the world of software engineering, where I am actively working towards my goal of becoming a data scientist and machine learning expert. This transition represents a fusion of my passion for technology and my diverse background in science and engineering. With my blend of teaching experience, engineering knowledge, and ongoing pursuit of expertise in data science and machine learning, I am poised to make significant contributions in a variety of domains. I eagerly anticipate the opportunities ahead to leverage my skills and drive positive change in the world..</p>
+        </section>
+
+        <section class="section" id="whats-new">
+            <h2>What's New?</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Latest Project</h3>
+                    <p>Launched a private ChatGPT that operates without data or WiFi.</p>
+                </div>
+                <div class="card">
+                    <h3>100-Day Challenge</h3>
+                    <p>Embarking on a journey to master a new skill using "THE K..Theory."</p>
+                </div>
+                <div class="card">
+                    <h3>Nypthoria</h3>
+                    <p>Working on an exciting new project. Stay tuned for updates!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="cv">
+            <h2>Brief CV</h2>
+            <h3>Education</h3>
+            <ul>
+                <li><strong>BSc in Software Engineering</strong> (2023 - Present)<br>Kigali, Rwanda<br><a href="https://www.alueducation.com/">AU Education</a></li>
+                <li><strong>Bachelor of Science in Petroleum Engineering</strong> (Graduated October 2019)<br>Bamenda, North West, Cameroon<br><a href="https://nahpi.cm/departments/petroleum">NAHPI</a></li>
+            </ul>
+            
+            <h3>Professional Experience</h3>
+            <ul>
+                <li><strong>Perception and Data Annotation</strong> (May 2024 - Present)<br>Kigali, Rwanda<br><a href="https://www.flyzipline.com/">Zipline</a><br>Analyzing sensor data and reviewing labeled data while meeting weekly delivery targets.</li>
+                <li><strong>Applied Data Science Lab</strong> (May 2023 - Present)<br>Completed a project in data analysis, visualization, and reporting for Mexico City and Brazil.<br><a href="https://learn.wqu.edu/programs">WQU</a></li>
+            </ul>
+            
+            <h3>Awards</h3>
+            <ul>
+                <li><strong>Bella MASTERS Certification and Award</strong> (March 2, 2023)<br><a href="https://bellamasters.org/">Bella Masters</a></li>
+                <li><strong>WMI Scholar</strong> (August 1, 2023)<br><a href="https://www.wellsmountaininitiative.org/">Wells Mountain Initiative</a></li>
+                <li><strong>Data Science Scholarship</strong> (May 9, 2023)<br><a href="https://learn.wqu.edu/programs">WQU</a></li>
+            </ul>
+            
+            <h3>Skills</h3>
+            <ul>
+                <li>Programming: Python, HTML, CSS, Excel</li>
+                <li>Strong problem-solving and critical-thinking abilities</li>
+                <li>Excellent communication and teamwork skills</li>
+            </ul>
+            
+            <h3>Languages</h3>
+            <ul>
+                <li>English: Native</li>
+                <li>French: Conversational</li>
+                <li>Oku: Native</li>
+            </ul>
+        </section>
+
+        <section class="section" id="courses">
+            <h2>Courses</h2>
+            <ul>
+                <li>Software Engineering Fundamentals</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Development with React</li>
+                <li>Machine Learning Basics</li>
+            </ul>
+        </section>
+
+        <section class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Email: ngumid@alustudent.com</p>
+            <p>Phone: +2376512346</p>
+            <p>LinkedIn: 
+                <a href="https://www.linkedin.com/in/ngum-dieudonne/" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" style="width:24px;height:24px;">
+                </a>
+            </p>
+            <p>GitHub: 
+                <a href="https://github.com/Ngum12" target="_blank">
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" style="width:24px;height:24px;">
+                </a>
+            </p>
+        </section>
+        
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Ngum Dieudonne. All rights reserved.</p>
+    </footer>
+</body>
+</html>
